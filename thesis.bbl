@@ -35,6 +35,33 @@ D.~L. Waltz, ``An english language question answering system for a large
   relational database,'' \emph{Communications of the ACM}, vol.~21, no.~7, pp.
   526--539, 1978.
 
+\bibitem{bao2014knowledge}
+J.~Bao, N.~Duan, M.~Zhou, and T.~Zhao, ``Knowledge-based question answering as
+  machine translation,'' \emph{Cell}, vol.~2, no.~6, 2014.
+
+\bibitem{iyyer2014neural}
+M.~Iyyer, J.~L. Boyd-Graber, L.~M.~B. Claudino, R.~Socher, and
+  H.~Daum{\'e}~III, ``A neural network for factoid question answering over
+  paragraphs.'' in \emph{EMNLP}, 2014, pp. 633--644.
+
+\bibitem{zhang2003question}
+D.~Zhang and W.~S. Lee, ``Question classification using support vector
+  machines,'' in \emph{Proceedings of the 26th annual international ACM SIGIR
+  conference on Research and development in informaion retrieval}.\hskip 1em
+  plus 0.5em minus 0.4em\relax ACM, 2003, pp. 26--32.
+
+\bibitem{katz1997annotating}
+B.~Katz, ``Annotating the world wide web using natural language,'' in
+  \emph{Computer-Assisted Information Searching on Internet}.\hskip 1em plus
+  0.5em minus 0.4em\relax LE CENTRE DE HAUTES ETUDES INTERNATIONALES
+  D'INFORMATIQUE DOCUMENTAIRE, 1997, pp. 136--155.
+
+\bibitem{zheng2002answerbus}
+Z.~Zheng, ``Answerbus question answering system,'' in \emph{Proceedings of the
+  second international conference on Human Language Technology Research}.\hskip
+  1em plus 0.5em minus 0.4em\relax Morgan Kaufmann Publishers Inc., 2002, pp.
+  399--404.
+
 \bibitem{wongso2016literature}
 R.~Wongso, D.~Suhartono, \emph{et~al.}, ``A literature review of question
   answering system using named entity recognition,'' in \emph{Information
@@ -47,6 +74,22 @@ D.~Chopra, N.~Joshi, and I.~Mathur, ``Named entity recognition in hindi using
   conditional random fields,'' in \emph{Proceedings of the Second International
   Conference on Information and Communication Technology for Competitive
   Strategies}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2016, p. 106.
+
+\bibitem{auer2007dbpedia}
+S.~Auer, C.~Bizer, G.~Kobilarov, J.~Lehmann, R.~Cyganiak, and Z.~Ives,
+  ``Dbpedia: A nucleus for a web of open data,'' \emph{The semantic web}, pp.
+  722--735, 2007.
+
+\bibitem{bollacker2008freebase}
+K.~Bollacker, C.~Evans, P.~Paritosh, T.~Sturge, and J.~Taylor, ``Freebase: a
+  collaboratively created graph database for structuring human knowledge,'' in
+  \emph{Proceedings of the 2008 ACM SIGMOD international conference on
+  Management of data}.\hskip 1em plus 0.5em minus 0.4em\relax AcM, 2008, pp.
+  1247--1250.
+
+\bibitem{high2012era}
+R.~High, ``The era of cognitive systems: An inside look at ibm watson and how
+  it works,'' \emph{IBM Corporation, Redbooks}, 2012.
 
 \bibitem{brill1999unsupervised}
 E.~Brill and M.~Pop, ``Unsupervised learning of disambiguation rules for

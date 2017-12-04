@@ -28,6 +28,7 @@ We have a implementation of a Brill tagger \cite {brill1992simple} for English a
 \paragraph{}
 For the Hindi variant of the Brill tagger, we first tag the words as per the data available in the database. Then for the remaining words of the sentence we use the rules to assign the most probable tag. Below we describe the algorithm and the rules used to tag words in a Hindi Sentence. The rules we use are as follows \\
 
+\break
 \begin{enumerate}
 \item Use the Lexicon in the database \\
 First tag the words in the phrase which are present in the Lexicon. The words which are not present in the lexicon are tagged as Unknown. We then apply the below rules to tag the words.
@@ -58,7 +59,6 @@ RULE: After applying all the rules if the word is still tagged as Unknown then t
 		
 \end{enumerate}
 	
-
 \begin{algorithm}
 \caption{Part of Speech Tagger}\label{alg:brilltaggervariant}
 \begin{algorithmic}[1]
@@ -122,7 +122,9 @@ RULE: After applying all the rules if the word is still tagged as Unknown then t
 \paragraph{}
 After all the words in the sentence are tagged with the most probable part of speech, we generate a tree like structure composing of the Noun, Verb and PostPosition or Preposition Phrase. For a Hindi sentence \cite{bhat2017improving}, the structure is generally Noun Phrase followed by the Verb Phrase which is same as most of the English sentences. In English, the verb or the predicate helps us separate the Noun and Verb Phrase, in case of Hindi we have something similar, these are known as $case$ words. These help us distinguish between the subject and object in a given sentence. This is why we have implemented the Hindi parse tree to be comprised of Noun Phrase, Postposition Phrase and Verb Phrase. 
 
-For example, for the sentence shown in Figure 3.1 we a parse tree as shown in Figure 3.2
+\break
+\paragraph{}
+For example, for the sentence shown in Figure 3 the parse tree generated is as shown in Figure 4
 
 \begin{figure}[htb]
 \centering
@@ -133,15 +135,14 @@ For example, for the sentence shown in Figure 3.1 we a parse tree as shown in Fi
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.8\textwidth]{images/parsetree.jpg}
+\includegraphics[width=0.5\textwidth]{images/parsetree.jpg}
 \caption{Parse Tree.} 
 \label{fig:parsetree}
 \end{figure}
 
 \break
-
 \paragraph{}
-To generate the above parse tree structure we follow certain grammar rules, \\
+To generate the parse tree structure as shown in Figure 4, we use the following grammar rules, \\
 
 \textbf {NP: $\{ \langle$ JJ | NN* $\rangle \}$+}  \\
 
@@ -151,14 +152,14 @@ For any given sentence, the initial sequence of adjectives and nouns becomes par
 
 This rule extracts the information from the sentence till we encounter the verb phrase. Hindi being a subject-object-verb language, most of the sentences usually end with verbs. So the verb phrase extraction rule is \\
 
-\textbf {VP: $\{ \langle$ VB $\rangle \}$+} \\
+\textbf {VP: $\{ \langle$ VB | IN | NP $\rangle \}$+} \\
 
 In Hindi, the case words which separate the noun and post position phrase are the ones which help define the relationship between the subject and object. Hence, identifying the case words more accurately will help increase how accurate the generated parse tree will be. Below we describe the algorithms for parsing sentence for different parts like the Noun Phrase, Postpositional Phrase and Verb Phrase,
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.8\textwidth]{images/gammarrules.jpg}
-\caption{Parse Tree.} 
+\includegraphics[width=0.5\textwidth]{images/gammarrules.jpg}
+\caption{Grammar Rules.} 
 \label{fig:gammarrules}
 \end{figure}
 
