@@ -1,4 +1,4 @@
-\chapter{The Files}
+\chapter{Implementation of Hindi Question Answer System}
 
 \paragraph{}
 This chapter discusses about the different stages involved in the functioning of the  Question Answer System in Yioop. The input to the system are the summaries of the web pages Yioop has crawled. For any given page, the summary is processed  by removing punctuations, special characters etc. After this initial processing, Yioop extracts phrases from the summary which are then subjected to the following modules.
@@ -19,11 +19,11 @@ This is one of the earliest approaches followed to implement tagging. In this ap
 The rules are then applied to define the most accurate tag for that word. Ambiguity between multiple tags is sorted by using the tags of words which precede the particular word.
 	
 \item Machine Learning Based Approach \\
-Today we have multiple machine learning algorithms which are used for Part of Speech tagging. Algorithms like Hidden Markov Model, Neural Networks etc. are trained on a small sample of text and over time these models prove to be almost as effective in retrieving information as a human would do. The most known part of speech tagging algorithms apart from Brill Tagging are the Viterbi Algorithm.
+Today we have multiple machine learning algorithms which are used for Part of Speech tagging  \cite {brill1999unsupervised}. Algorithms like Hidden Markov Model, Neural Networks etc. are trained on a small sample of text and over time these models prove to be almost as effective in retrieving information as a human would do. The most known part of speech tagging algorithms apart from Brill Tagging are the Viterbi Algorithm.
 \end{enumerate}
 
 \paragraph{}
-We have a implementation of a Brill tagger [] for English and a similar variant for Hindi.  The initial implementation of the Question Answer System had a file based lexicon which meant tagging a word required a file scan which eventually  slowed the Question Answer module in Yioop as a whole. As a solution, the lexicon is now stored as part of the database which will used by Yioop. The lexicon table created is indexed on the word and locale meaning the retrieval time is reduced to $O(1)$ greatly improving the speed of the Question Answer module. 
+We have a implementation of a Brill tagger \cite {brill1992simple} for English and a similar variant for Hindi \cite {garg2012rule}, \cite {dalal2006hindi}.  The initial implementation of the Question Answer System had a file based lexicon which meant tagging a word required a file scan which eventually  slowed the Question Answer module in Yioop as a whole. As a solution, the lexicon is now stored as part of the database which will used by Yioop. The lexicon table created is indexed on the word and locale meaning the retrieval time is reduced to $O(1)$ greatly improving the speed of the Question Answer module. 
 
 \paragraph{}
 For the Hindi variant of the Brill tagger, we first tag the words as per the data available in the database. Then for the remaining words of the sentence we use the rules to assign the most probable tag. Below we describe the algorithm and the rules used to tag words in a Hindi Sentence. The rules we use are as follows \\

@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \providecommand{\url}[1]{#1}
 \addcustomcontentsline
 \csname url@rmstyle\endcsname
@@ -23,6 +23,18 @@
 G.~G. Chowdhury, ``Natural language processing,'' \emph{Annual review of
   information science and technology}, vol.~37, no.~1, pp. 51--89, 2003.
 
+\bibitem{patel2015question}
+N.~Patel, ``Question answering system for yioop,'' 2015.
+
+\bibitem{simmons1970natural}
+R.~F. Simmons, ``Natural language question-answering systems: 1969,''
+  \emph{Communications of the ACM}, vol.~13, no.~1, pp. 15--30, 1970.
+
+\bibitem{waltz1978english}
+D.~L. Waltz, ``An english language question answering system for a large
+  relational database,'' \emph{Communications of the ACM}, vol.~21, no.~7, pp.
+  526--539, 1978.
+
 \bibitem{wongso2016literature}
 R.~Wongso, D.~Suhartono, \emph{et~al.}, ``A literature review of question
   answering system using named entity recognition,'' in \emph{Information
@@ -35,6 +47,26 @@ D.~Chopra, N.~Joshi, and I.~Mathur, ``Named entity recognition in hindi using
   conditional random fields,'' in \emph{Proceedings of the Second International
   Conference on Information and Communication Technology for Competitive
   Strategies}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2016, p. 106.
+
+\bibitem{brill1999unsupervised}
+E.~Brill and M.~Pop, ``Unsupervised learning of disambiguation rules for
+  part-of-speech tagging,'' in \emph{Natural language processing using very
+  large corpora}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 1999, pp.
+  27--42.
+
+\bibitem{brill1992simple}
+E.~Brill, ``A simple rule-based part of speech tagger,'' in \emph{Proceedings
+  of the workshop on Speech and Natural Language}.\hskip 1em plus 0.5em minus
+  0.4em\relax Association for Computational Linguistics, 1992, pp. 112--116.
+
+\bibitem{garg2012rule}
+N.~Garg, V.~Goyal, and S.~Preet, ``Rule based hindi part of speech tagger.'' in
+  \emph{COLING (Demos)}, 2012, pp. 163--174.
+
+\bibitem{dalal2006hindi}
+A.~Dalal, K.~Nagaraj, U.~Sawant, and S.~Shelke, ``Hindi part-of-speech tagging
+  and chunking: A maximum entropy approach,'' \emph{Proceeding of the NLPAI
+  Machine Learning Competition}, 2006.
 
 \bibitem{bhat2017improving}
 R.~A. Bhat, I.~A. Bhat, and D.~M. Sharma, ``Improving transition-based
