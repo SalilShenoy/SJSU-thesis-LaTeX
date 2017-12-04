@@ -1,0 +1,45 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{#1}
+\addcustomcontentsline
+\csname url@rmstyle\endcsname
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand\BIBentrySTDinterwordspacing{\spaceskip=0pt\relax}
+\providecommand\BIBentryALTinterwordstretchfactor{4}
+\providecommand\BIBentryALTinterwordspacing{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
+\providecommand\BIBforeignlanguage[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+
+\bibitem{chowdhury2003natural}
+G.~G. Chowdhury, ``Natural language processing,'' \emph{Annual review of
+  information science and technology}, vol.~37, no.~1, pp. 51--89, 2003.
+
+\bibitem{wongso2016literature}
+R.~Wongso, D.~Suhartono, \emph{et~al.}, ``A literature review of question
+  answering system using named entity recognition,'' in \emph{Information
+  Technology, Computer, and Electrical Engineering (ICITACEE), 2016 3rd
+  International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
+  2016, pp. 274--277.
+
+\bibitem{chopra2016named}
+D.~Chopra, N.~Joshi, and I.~Mathur, ``Named entity recognition in hindi using
+  conditional random fields,'' in \emph{Proceedings of the Second International
+  Conference on Information and Communication Technology for Competitive
+  Strategies}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2016, p. 106.
+
+\bibitem{bhat2017improving}
+R.~A. Bhat, I.~A. Bhat, and D.~M. Sharma, ``Improving transition-based
+  dependency parsing of hindi and urdu by modeling syntactically relevant
+  phenomena,'' \emph{ACM Transactions on Asian and Low-Resource Language
+  Information Processing (TALLIP)}, vol.~16, no.~3, p.~17, 2017.
+
+\end{thebibliography}

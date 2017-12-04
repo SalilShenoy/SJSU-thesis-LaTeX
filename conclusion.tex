@@ -1,0 +1,21 @@
+\chapter{Conclusion And Future Work}
+
+\paragraph{}
+The aim of the project was to improve and implement a Question Answer module of Yioop. An efficient Question Answering System can essentially help people utilize the power of data as it is one of the resources which is available at the present on the world wide web. The eventual system should be able to parse Questions in any natural format as posed by the user. It should be able to recognize different entities and identify the answer type depending on the context of the question.
+
+\paragraph{}
+This project is one of the steps to improving and implementing a Open source Question Answer module for two languages English and Hindi respectively. These modules are able to answer simple Wh questions in both languages. We have performed some preliminary tests for these languages by creating separate index's for English and Hindi. Factors which affect the accuracy of a Question Answer system include the text extraction,  the lexicon, the part of speech tagger and grammar rules applied to extract the question answer pairs.
+
+\paragraph{}
+Some of the future work which can be undertaken on the current implementation of the Question Answer System in Yioop are listed below
+
+\begin{enumerate}
+\item
+For Hindi language, we can improve the summarizer, so that the extracted text in the summary follows the semantics of Hindi language. This will ensure that modules like triplet extraction can extract all the information and form more question answer pairs resulting in improved performance for a wide range of Questions.
+
+\item
+We can improve the tagging of entities in a phrase. The terms in the extracted phrase can be chunked together and named entities can be identified using the entities in added to the database. This can help identify the context of the question asked by the user and similarly return a more accurate answer.
+
+\item
+Currently when the user adds the entities to the database, the local copy of the database gets updated. A mechanism can be added to Yioop so that these changes are reflected in the lexicon on the Yioop server. This can either be done by having the user send his local copy of the Lexicon to the Yioop server so entities added by that user can be distributed via a a Yioop update. Another, way is to have the lexicon stored on the server thus any update to the lexicon will be available to all the users. But this may impact the time required in different phase of Information Retrieval like Part of Speech Tagging and Question Processing as they depend on the lexicon table.
+\end{enumerate}
