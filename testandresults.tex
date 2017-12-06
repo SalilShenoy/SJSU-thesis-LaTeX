@@ -7,7 +7,7 @@ The Question Answer System implemented is part of the Yioop search engine and is
 In this section, we describe test cases for the system as standalone module. It is assumed that the input to the system is a processed to remove special characters, punctuations, etc. Also, the given sentence is semantically and syntactically correct.
 
 \begin{enumerate}
-\item  Figure 9 shows the sentence after it is tagged for parts of speech
+\item  Figure 7 shows the sentence after it is tagged for parts of speech
 
 \begin{figure}[htb]
 \centering
@@ -16,27 +16,27 @@ In this section, we describe test cases for the system as standalone module. It 
 \label{fig:sentence_testcase1}
 \end{figure}
 
-A word for word translation of the above sentence to English is 'Obama Harward law school from 1999 graduate complete'. Figure 10 shows the Parse Tree generated for this sentence 
+A word for word translation of the above sentence to English is 'Obama Harward law school from 1999 graduate complete'. Figure 8 shows the Parse Tree generated for this sentence 
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\textwidth]{images/standalone_testcase.jpg}
-\caption{Parse Tree for sentence in Figure 9.} 
+\caption{Parse Tree for sentence in Figure 7.} 
 \label{fig:standalone_testcase}
 \end{figure}
 
 \paragraph{}
-The triplets extracted for the above parse tree are as shown in Figure 11 above.
+The triplets extracted for the above parse tree are as shown in Figure 8 above.
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\textwidth]{images/triplet_standalone.jpg}
-\caption{Triplets Extracted for sentence Figure 9.} 
+\caption{Triplets Extracted for sentence Figure 8.} 
 \label{fig:triplet_standalone}
 \end{figure}
 
 \break
-\item  Figure 12 shows the sentence after it is tagged for parts of speech
+\item  Figure 10 shows the sentence after it is tagged for parts of speech
 
 \begin{figure}[htb]
 \centering
@@ -45,12 +45,12 @@ The triplets extracted for the above parse tree are as shown in Figure 11 above.
 \label{fig:sentence_testcase2}
 \end{figure}
 
-A word for word translation of the above sentence to English is 'Narendra Modi India (s) Prime Minister is'. Figure 13 shows the Parse Tree generated for this sentence 
+A word for word translation of the above sentence to English is 'Narendra Modi India (s) Prime Minister is'. Figure 11 shows the Parse Tree generated for this sentence 
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\textwidth]{images/standalone_testcase2.jpg}
-\caption{Parse Tree for sentence in Figure 12.} 
+\caption{Parse Tree for sentence in Figure 10.} 
 \label{fig:standalone_testcase2}
 \end{figure}
 
@@ -59,7 +59,7 @@ A word for word translation of the above sentence to English is 'Narendra Modi I
 \break
 \section{Question Answer Module Integrated in Yioop}
 \paragraph{}
-Below are results for the Question Answer System when a crawl was setup for all wikipedia pages in Hindi, Indian websites. We set up a crawl by configuring Yioop in under crawl options. For the crawl, we restrict the crawler to websites from domains 'hi.wikipedia.org', 'co.in' and 'in'. We stopped the crawl was after we hit 200,000 webpages. The crawler extracted information from 7925 webpages to create the index. Figure 14, Figure 15, Figure 16 show the results after the Question Answer system is integrated in Yioop. 
+Below are results for the Question Answer System when a crawl was setup for all wikipedia pages in Hindi, Indian websites. We set up a crawl by configuring Yioop in under crawl options. For the crawl, we restrict the crawler to websites from domains 'hi.wikipedia.org', 'co.in' and 'in'. We stopped the crawl was after we hit 200,000 webpages. The crawler extracted information from 7925 webpages to create the index. Figure 12, Figure 13, show the results after the Question Answer system is integrated in Yioop. 
 
 \begin{figure}[htb]
 \centering
@@ -77,7 +77,7 @@ Below are results for the Question Answer System when a crawl was setup for all 
 \end{figure}
 
 \paragraph{}
-The integration of the Question Answer system slows down Yioop as extra processing is performed for generating and storing the triplets. But the performance improves for query time as whenever user enters a question it is looked up directly from a map. Figure 17 shows the time impact when we asked a simple question in Hindi.
+The integration of the Question Answer system slows down Yioop as extra processing is performed while generating and storing the triplets. But the performance improves for query time as whenever the  user enters a question it is looked up directly from a map. Figure 14 shows the time impact when we asked a simple question in Hindi.
 
 \begin{figure}[htb]
 \centering
@@ -87,7 +87,7 @@ The integration of the Question Answer system slows down Yioop as extra processi
 \end{figure}
 
 \paragraph{}
-The initial implementation of the Question Answer system read performed part of speech tagging by reading a file based lexicon from a file. It performed a sequential search on the lexicon read in memory, Figure 18 shows the improvement in part of speech tagging, as words are tagged from the database indexed on term and locale. For the test, I used 1000 - 1500 word paragraphs for each of the subjects as input to the two variants of the part of speech tagger module.
+The initial implementation of the Question Answer system read performed part of speech tagging by reading a file based lexicon from a file. It performed a sequential search on the lexicon read in memory, Figure 15 shows the improvement in part of speech tagging, as words are tagged from the database indexed on term and locale. For the test, I used 1000 - 1500 word paragraphs for each of the subjects as input to the two variants of the part of speech tagger module.
 
 \begin{figure}[htb]
 \centering
@@ -98,7 +98,7 @@ The initial implementation of the Question Answer system read performed part of 
 \break
 
 \paragraph{}
-We compare the English and Hindi Question answer systems for relevant answers. I used 4 subjects on which I asked the same question in English and Hindi. Figure 19 shows the number of relevant answers returned on Page 1 of search result. We can see that English system is better at providing more accurate answers compared to Hindi.
+We compare the English and Hindi Question answer systems for relevant answers. I used 4 subjects on which I asked the same question in English and Hindi. Figure 16 shows the number of relevant answers returned on Page 1 of search result. We can see that English system is better at providing more accurate answers compared to Hindi.
 
 \begin{figure}[htb]
 \centering
