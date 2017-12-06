@@ -1,10 +1,24 @@
 \chapter{Introduction}
 
 \paragraph{}
-The web has information written in almost 7000 languages and it is a necessity to have systems which can retrieve information efectively in different languages. One of the most researched Indian language is Hindi which has lead to a relatively large number of Hindi documents made available. The purpose of implementing a Question Answer (QA) system which can accept and retrieve answers in Hindi is to make it possible for software system to understand the language and reach out to a bigger audience. The users prefer and feel a sense of comfort if they can use software in languages they have expertise in. This is where Natural Language Processing \cite{chowdhury2003natural} plays an important role as it helps to handle information in native languages.
+The web has information written in almost 7000 languages and it is a necessity to have systems which can retrieve information efectively in different languages. One of the most researched Indian language is Hindi which means a relatively large number of Hindi documents are available. The purpose of implementing a Question Answer (QA) system which can accept and retrieve answers in Hindi is to make it possible for software system to understand the language and reach out to a bigger audience. The users prefer and feel a sense of comfort if they can use a software in a language they have expertise in. This is where Natural Language Processing \cite{chowdhury2003natural} plays an important role as it helps to handle information in native languages.
 
 \paragraph{}
 Natural Language Processing is a discipline of Computer Science, Artificial Intelligence which helps humans interact with computers in a natural manner. We can define Natural Language Processing as an area of research which explore how machines can be programmed to understand and play with natural language text and speech wise. This involved studying of humans perceive and act to the language so that efficient tools and programs can be developed to manipulate a natural language. Natural Language processing can be used in Computer Science, Linguistics, Artificial Intelligence and Robotics. 
+
+\paragraph{}
+There are various Question Answering systems implemented over the years which extract data from the web and return answers. The systems implemented use a knowledge store, machine learning or a combination of the two to process the data and extract question answers. we describe some of the related work and existing systems for Question Answering 
+
+\begin{enumerate}
+\item START: Question Answer System \cite{katz1997annotating} which extracts data from the web to answer questions ranging from cities to people etc. The system uses a database to fetch the answer to user asked queries. 
+
+\item
+Garima Nanda et.al implemented a Hindi Question Answer system \cite {nanda2016hindi} using a combination of machine learning and a knowledge base to answer user queries. The system parses the input, tokenizes and extract features using previously calculated results. The system uses  Naive Bayes as a classifier combined with known datastore to return answers in Hindi.
+
+\item
+IRSL \cite {sangeetha2017information} is a closed domain Question Answer system developed for helping users get answers related to laws in India. The system uses OpenNLP to preprocess the input and a Q-Learning algorithm to learn from user inputs. It then uses a Wordnet to extract synonyms.
+
+\end{enumerate}
 
 \paragraph{}
 For the project we have implemented a system which has Natural Language Processing at its core. We discuss about improving an existing Question Answering Module \cite {patel2015question} in Yioop and then implement a similar system for Hindi which is a Indian language. We discuss the different approaches which are followed while developing a Question Answering System \cite {simmons1970natural}, \cite{waltz1978english}. The different tasks which are performed to process the data and convert it to a format which Yioop can use to handle simple English and Hindi questions. We also provide a way for the user to add entities to the Yioop database which can further improve the efficiency of the Question Answer System.

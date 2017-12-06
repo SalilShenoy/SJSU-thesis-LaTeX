@@ -13,6 +13,10 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: references.bib
+Repeated entry---line 242 of file references.bib
+ : @inproceedings{katz1997annotating
+ :                                  ,
+I'm skipping whatever remains of this entry
  
 -- University of Rhode Island references, version 1.1 (2005/07/12),
 --  based on IEEEtran.bst version 1.11 (2003/04/02) by Michael Shell.
@@ -22,45 +26,45 @@ Database file #1: references.bib
 Warning--empty journal in patel2015question
 
 Done.
-You've used 19 entries,
+You've used 21 entries,
             3985 wiz_defined-function locations,
-            918 strings with 10844 characters,
-and the built_in function-call counts, 14226 in all, are:
-= -- 1123
-> -- 301
-< -- 123
-+ -- 168
-- -- 48
-* -- 663
-:= -- 2126
-add.period$ -- 46
-call.type$ -- 19
-change.case$ -- 19
-chr.to.int$ -- 294
-cite$ -- 20
-duplicate$ -- 1038
-empty$ -- 1228
-format.name$ -- 59
-if$ -- 3296
+            928 strings with 11287 characters,
+and the built_in function-call counts, 16088 in all, are:
+= -- 1262
+> -- 347
+< -- 141
++ -- 194
+- -- 55
+* -- 751
+:= -- 2375
+add.period$ -- 52
+call.type$ -- 21
+change.case$ -- 21
+chr.to.int$ -- 342
+cite$ -- 22
+duplicate$ -- 1166
+empty$ -- 1396
+format.name$ -- 68
+if$ -- 3740
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 168
-newline$ -- 78
-num.names$ -- 19
-pop$ -- 398
+int.to.str$ -- 21
+missing$ -- 189
+newline$ -- 84
+num.names$ -- 21
+pop$ -- 453
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1114
+skip$ -- 1256
 stack$ -- 0
-substring$ -- 715
-swap$ -- 817
-text.length$ -- 25
+substring$ -- 829
+swap$ -- 923
+text.length$ -- 27
 text.prefix$ -- 0
 top$ -- 8
 type$ -- 0
 warning$ -- 1
-while$ -- 73
-width$ -- 21
-write$ -- 196
-(There was 1 warning)
+while$ -- 83
+width$ -- 23
+write$ -- 214
+(There was 1 error message)

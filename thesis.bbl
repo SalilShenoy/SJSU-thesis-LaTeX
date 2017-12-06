@@ -23,6 +23,24 @@
 G.~G. Chowdhury, ``Natural language processing,'' \emph{Annual review of
   information science and technology}, vol.~37, no.~1, pp. 51--89, 2003.
 
+\bibitem{katz1997annotating}
+B.~Katz, ``Annotating the world wide web using natural language,'' in
+  \emph{Computer-Assisted Information Searching on Internet}.\hskip 1em plus
+  0.5em minus 0.4em\relax LE CENTRE DE HAUTES ETUDES INTERNATIONALES
+  D'INFORMATIQUE DOCUMENTAIRE, 1997, pp. 136--155.
+
+\bibitem{nanda2016hindi}
+G.~Nanda, M.~Dua, and K.~Singla, ``A hindi question answering system using
+  machine learning approach,'' in \emph{Computational Techniques in Information
+  and Communication Technologies (ICCTICT), 2016 International Conference
+  on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2016, pp. 311--314.
+
+\bibitem{sangeetha2017information}
+D.~Sangeetha, R.~Kavyashri, S.~Swetha, and S.~Vignesh, ``Information retrieval
+  system for laws,'' in \emph{Advanced Computing (ICoAC), 2016 Eighth
+  International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
+  2017, pp. 212--217.
+
 \bibitem{patel2015question}
 N.~Patel, ``Question answering system for yioop,'' 2015.
 
@@ -49,12 +67,6 @@ D.~Zhang and W.~S. Lee, ``Question classification using support vector
   machines,'' in \emph{Proceedings of the 26th annual international ACM SIGIR
   conference on Research and development in informaion retrieval}.\hskip 1em
   plus 0.5em minus 0.4em\relax ACM, 2003, pp. 26--32.
-
-\bibitem{katz1997annotating}
-B.~Katz, ``Annotating the world wide web using natural language,'' in
-  \emph{Computer-Assisted Information Searching on Internet}.\hskip 1em plus
-  0.5em minus 0.4em\relax LE CENTRE DE HAUTES ETUDES INTERNATIONALES
-  D'INFORMATIQUE DOCUMENTAIRE, 1997, pp. 136--155.
 
 \bibitem{zheng2002answerbus}
 Z.~Zheng, ``Answerbus question answering system,'' in \emph{Proceedings of the

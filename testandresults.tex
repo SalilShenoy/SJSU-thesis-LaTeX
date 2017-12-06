@@ -59,25 +59,57 @@ A word for word translation of the above sentence to English is 'Narendra Modi I
 \break
 \section{Question Answer Module Integrated in Yioop}
 \paragraph{}
-Below are results for the Question Answer System when a crawl was setup for all wikipedia pages in Hindi, Indian websites. The crawler was able to crawl 100,000 webpages and extract information from 5925 webpages to create the index. Figure 14, Figure 15 and Figure 16 are examples of Who, Why and What questions and with the best answer displayed at the top.
+Below are results for the Question Answer System when a crawl was setup for all wikipedia pages in Hindi, Indian websites. We set up a crawl by configuring Yioop in under crawl options. For the crawl, we restrict the crawler to websites from domains 'hi.wikipedia.org', 'co.in' and 'in'. We stopped the crawl was after we hit 200,000 webpages. The crawler extracted information from 7925 webpages to create the index. Figure 14, Figure 15, Figure 16 show the results after the Question Answer system is integrated in Yioop. 
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\textwidth]{images/who_question.jpg}
-\caption{Who Question.} 
+\caption{Who question after Integration in Yioop.} 
 \label{fig:who_question}
 \end{figure}
+\break
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\textwidth]{images/why_question.jpg}
-\caption{Why Question.} 
+\caption{Why Question after Integration in Yioop.} 
 \label{fig:why_question}
 \end{figure}
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\textwidth]{images/what_question.jpg}
-\caption{What Question.} 
+\caption{What Question after Integration in Yioop.} 
 \label{fig:what_question}
+\end{figure}
+
+\paragraph{}
+The integration of the Question Answer system slows down Yioop as extra processing is performed for generating and storing the triplets. But the performance improves for query time as whenever user enters a question it is looked up directly from a map. Figure 17 shows the time impact when we asked a simple question in Hindi.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{images/QA_performance1.jpg}
+\caption{Yioop performance for simple Hindi Questions.} 
+\label{fig:QA_performance1}
+\end{figure}
+
+\paragraph{}
+The initial implementation of the Question Answer system read performed part of speech tagging by reading a file based lexicon from a file. It performed a sequential search on the lexicon read in memory, Figure 18 shows the improvement in part of speech tagging, as words are tagged from the database indexed on term and locale. For the test, I used 1000 - 1500 word paragraphs for each of the subjects as input to the two variants of the part of speech tagger module.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{images/QA_performance2.jpg}
+\caption{Yioop performance for simple Hindi Questions.} 
+\label{fig:QA_performance2}
+\end{figure}
+\break
+
+\paragraph{}
+We compare the English and Hindi Question answer systems for relevant answers. I used 4 subjects on which I asked the same question in English and Hindi. Figure 19 shows the number of relevant answers returned on Page 1 of search result. We can see that English system is better at providing more accurate answers compared to Hindi.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{images/QA_performance3.jpg}
+\caption{Yioop performance for simple Hindi Questions.} 
+\label{fig:QA_performance3}
 \end{figure}
