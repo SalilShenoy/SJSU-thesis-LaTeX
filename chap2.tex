@@ -1,7 +1,7 @@
 \chapter{Background on Question Answer Systems}
 
 \paragraph{}
-Even with the simplifications developed for searching information online it can be tough and time consuming to navigate through the vast amount of data. One of the solutions, to this problem is developing an automated system which is capable enough to accept input in natural language and generate an output which is equally natural. This is where a Question Answer System plays an important role. The aim of a Question Answer System is basically to allow a user to ask a question in everyday language and receive an answer in user comprehendible format. 
+Even with the simplifications developed for searching information online it can be tough and time consuming to navigate through the vast amount of data. One of the solutions, to this problem is developing an automated system which is capable enough to accept input in natural language and generate an output which is equally natural. This is where a Question Answer System plays an important role. The aim of a Question Answer System is basically to allow a user to ask a question in everyday language and receive an answer in user comprehensible format. 
 
 \paragraph{}
 As with developing software systems, building a efficient and robust Question Answering System has its own fair share of challenges. There are multiple ways in which we can build this system from  machine language translation \cite {bao2014knowledge}, neural networks \cite{iyyer2014neural} and different machine learning algorithms \cite{zhang2003question}.
@@ -38,7 +38,7 @@ This phase decides what type of question is being asked and subsequently which t
 extract. For question processing to work we need to perform the query formulation. Query formulation converts the posed question into a form which can be used in Information Retrieval. Once the form of the question is identified the exact answer type can be retrieved. 
 	
 \item Retrieving and Ranking Passage \\
-Once we get a query format from step 1, we can use this to search the answer in the documents.
+Once we get a query format from Step 1, we can use this to search the answer in the documents.
 We first rank the documents in which we find the probable answers, after this we rank the documents in which a match was not found, we do this by using user written rules or by using machine learning algorithms.
 
 \break
@@ -79,7 +79,7 @@ In this phase, the system parses the question, tags it for named entities and ex
 
 \break
 \item Candidate Answer Generation \\
-Once we have the query phase from step 1, we search external documents, texts and transcripts as well as a structured database to extract as many as possible candidate answers. The manner in which we search the query phrase will differ, for the searching the external sources the methods depends on the text we are searching. For the database, we can use queries similar to the ones we use with triplet stores like FreeBase, DBPedia etc.
+Once we have the query phase from Step 1, we search external documents, texts and transcripts as well as a structured database to extract as many as possible candidate answers. The manner in which we search the query phrase will differ, for the searching the external sources the methods depends on the text we are searching. For the database, we can use queries similar to the ones we use with triplet stores like FreeBase, DBPedia etc.
 
 \item Answer merging and scoring \\
 This involves merging the extracted answers which are similar. For example, United States of America and U.S.A would be merged, this needs a dictionary with similar entities which can help detect this type of conflicts. At the end, there have a set of answers each with a feature vector. These are then subjected to a classifier and assigned a confidence value. This step runs iteratively helping output the best answer to the user.
