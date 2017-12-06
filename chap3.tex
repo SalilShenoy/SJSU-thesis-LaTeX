@@ -120,28 +120,7 @@ RULE: After applying all the rules if the word is still tagged as Unknown then t
 
 \section {Parse Tree Generation}
 \paragraph{}
-After all the words in the sentence are tagged with the most probable part of speech, we generate a tree like structure composing of the Noun, Verb and PostPosition or Preposition Phrase. For a Hindi sentence \cite{bhat2017improving}, the structure is generally Noun Phrase followed by the Verb Phrase which is same as most of the English sentences. In English, the verb or the predicate helps us separate the Noun and Verb Phrase, in case of Hindi we have something similar, these are known as $case$ words. These help us distinguish between the subject and object in a given sentence. This is why we have implemented the Hindi parse tree to be comprised of Noun Phrase, Postposition Phrase and Verb Phrase. 
-
-\paragraph{}
-For example, for the sentence shown in Figure 3 the parse tree generated is as shown in Figure 4
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.5\textwidth]{images/sentence.jpg}
-\caption{Hindi Sentence.} 
-\label{fig:sentence}
-\end{figure}
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.5\textwidth]{images/parsetree.jpg}
-\caption{Parse Tree.} 
-\label{fig:parsetree}
-\end{figure}
-
-\break
-\paragraph{}
-To generate the parse tree structure as shown in Figure 4, we use the following grammar rules, \\
+After all the words in the sentence are tagged with the most probable part of speech, we generate a tree like structure composing of the Noun, Verb and PostPosition or Preposition Phrase. For a Hindi sentence \cite{bhat2017improving}, the structure is generally Noun Phrase followed by the Verb Phrase which is same as most of the English sentences. In English, the verb or the predicate helps us separate the Noun and Verb Phrase, in case of Hindi we have something similar, these are known as $case$ words. These help us distinguish between the subject and object in a given sentence. This is the reason we have implemented the Hindi parse tree to be comprised of Noun Phrase, Postposition Phrase and Verb Phrase. 
 
 \textbf {NP: $\{ \langle$ JJ | NN* $\rangle \}$+}  \\
 
@@ -151,7 +130,7 @@ For any given sentence, the initial sequence of adjectives and nouns becomes par
 
 This rule extracts the information from the sentence till we encounter the verb phrase. Hindi being a subject-object-verb language, most of the sentences usually end with verbs. So the verb phrase extraction rule is \\
 
-\textbf {VP: $\{ \langle$ VB | IN | NP $\rangle \}$+} \\
+\textbf {VP: $\{ \langle$ VB*$\rangle \langle $ IN | NP $\rangle \}$} \\
 
 In Hindi, the case words which separate the noun and post position phrase are the ones which help define the relationship between the subject and object. Hence, identifying the case words more accurately will help increase how accurate the generated parse tree will be. Below we describe the algorithms for parsing sentence for different parts like the Noun Phrase, Postpositional Phrase and Verb Phrase,
 

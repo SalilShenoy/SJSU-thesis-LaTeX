@@ -41,17 +41,15 @@ D.~Sangeetha, R.~Kavyashri, S.~Swetha, and S.~Vignesh, ``Information retrieval
   International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
   2017, pp. 212--217.
 
+\bibitem{alupului2016question}
+\BIBentryALTinterwordspacing
+M.~Alupului, A.~Ames, B.~Collopy, J.~Pesot, R.~Pierce, and D.~Steinmetz,
+  ``Question-answering system,'' Oct.~18 2016, uS Patent 9,471,668. [Online].
+  Available: \url{https://www.google.com/patents/US9471668}
+\BIBentrySTDinterwordspacing
+
 \bibitem{patel2015question}
 N.~Patel, ``Question answering system for yioop,'' 2015.
-
-\bibitem{simmons1970natural}
-R.~F. Simmons, ``Natural language question-answering systems: 1969,''
-  \emph{Communications of the ACM}, vol.~13, no.~1, pp. 15--30, 1970.
-
-\bibitem{waltz1978english}
-D.~L. Waltz, ``An english language question answering system for a large
-  relational database,'' \emph{Communications of the ACM}, vol.~21, no.~7, pp.
-  526--539, 1978.
 
 \bibitem{bao2014knowledge}
 J.~Bao, N.~Duan, M.~Zhou, and T.~Zhao, ``Knowledge-based question answering as

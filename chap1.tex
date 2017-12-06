@@ -1,24 +1,38 @@
 \chapter{Introduction}
 
 \paragraph{}
-The web has information written in almost 7000 languages and it is a necessity to have systems which can retrieve information efectively in different languages. One of the most researched Indian language is Hindi which means a relatively large number of Hindi documents are available. The purpose of implementing a Question Answer (QA) system which can accept and retrieve answers in Hindi is to make it possible for software system to understand the language and reach out to a bigger audience. The users prefer and feel a sense of comfort if they can use a software in a language they have expertise in. This is where Natural Language Processing \cite{chowdhury2003natural} plays an important role as it helps to handle information in native languages.
+The web has information written in almost 7000 languages and it is a necessity to have systems which can retrieve information effectively in different languages. The most researched Indian language is Hindi which means a relatively large number of Hindi documents are available. The purpose of implementing a Question Answer system which can accept and retrieve answers in Hindi is to make it possible for a software system to understand the language and reach out to a bigger audience. Users prefer and feel a sense of comfort if they can use a software in a language they have expertise in. This is where Natural Language Processing \cite{chowdhury2003natural} plays an important role as it helps to handle information in native languages.
 
 \paragraph{}
-Natural Language Processing is a discipline of Computer Science, Artificial Intelligence which helps humans interact with computers in a natural manner. We can define Natural Language Processing as an area of research which explore how machines can be programmed to understand and play with natural language text and speech wise. This involved studying of humans perceive and act to the language so that efficient tools and programs can be developed to manipulate a natural language. Natural Language processing can be used in Computer Science, Linguistics, Artificial Intelligence and Robotics. 
+Natural Language Processing is a discipline of Computer Science, Artificial Intelligence which helps humans interact with computers in a natural manner. We can define Natural Language Processing as an area of research which explores how machines can be programmed to understand and play with natural language text and speech wise. This involved studying of how humans perceive and act to the language so that efficient tools and programs can be developed to manipulate a natural language. Natural Language processing can be used in Computer Science, Linguistics, Artificial Intelligence and Robotics. 
 
+\section{Related Work}
 \paragraph{}
-There are various Question Answering systems implemented over the years which extract data from the web and return answers. The systems implemented use a knowledge store, machine learning or a combination of the two to process the data and extract question answers. we describe some of the related work and existing systems for Question Answering 
+There are various Question Answering systems implemented over the years which extract data from the web and return answers. The systems implemented may use a knowledge store, machine learning or a combination of the two to process the data and extract question answers. We describe some of the related work and existing systems for Question Answering systems.
 
 \begin{enumerate}
-\item START: Question Answer System \cite{katz1997annotating} which extracts data from the web to answer questions ranging from cities to people etc. The system uses a database to fetch the answer to user asked queries. 
+\item 
+START: Question Answer System \cite{katz1997annotating} which extracts data from the web to answer questions ranging from cities to people etc. The system uses a database to fetch the answer to a user asked question.
 
 \item
-Garima Nanda et.al implemented a Hindi Question Answer system \cite {nanda2016hindi} using a combination of machine learning and a knowledge base to answer user queries. The system parses the input, tokenizes and extract features using previously calculated results. The system uses  Naive Bayes as a classifier combined with known datastore to return answers in Hindi.
+Garima Nanda et.al implemented a Hindi Question Answer system \cite {nanda2016hindi} using a combination of machine learning and a knowledge base to answer user queries. The system parses input, tokenizes and extract features using previously calculated results. The system uses  Naive Bayes as a classifier combined with known data store to return answers in Hindi.
 
 \item
 IRSL \cite {sangeetha2017information} is a closed domain Question Answer system developed for helping users get answers related to laws in India. The system uses OpenNLP to preprocess the input and a Q-Learning algorithm to learn from user inputs. It then uses a Wordnet to extract synonyms.
 
+\item 
+In Google \cite {alupului2016question}, previously when the user was presented with links and references. Today, the users is presented with a short paragraph at the top of the search results. The system is capable of semantically distinguishing the questions. The system however does not provide an answer for all queries.
+
 \end{enumerate}
 
+The above systems are mainly classified as Open Domain and Closed Domain Question Answering Systems.
+
 \paragraph{}
-For the project we have implemented a system which has Natural Language Processing at its core. We discuss about improving an existing Question Answering Module \cite {patel2015question} in Yioop and then implement a similar system for Hindi which is a Indian language. We discuss the different approaches which are followed while developing a Question Answering System \cite {simmons1970natural}, \cite{waltz1978english}. The different tasks which are performed to process the data and convert it to a format which Yioop can use to handle simple English and Hindi questions. We also provide a way for the user to add entities to the Yioop database which can further improve the efficiency of the Question Answer System.
+Open domain systems are responsible for handling large amounts of data and wide range of questions. They are designed to answer questions about everything. Google, Wikipedia, etc. are examples of such systems. They depend on their knowledge store to tackle the questions and return the best answers.
+
+\paragraph{}
+Closed domain systems are designed to handle questions in a specific domain. For example, IRSL system is designed specifically to handle question-answers related to the Indian Judiciary. Such systems have a fixed set of documents which they process when a user asks a query to return the best answer.
+
+\paragraph{}
+Natural Language Processing is the core of any Question Answer system. The number of modules involved in building an efficient Question Answer system adds to the complexity of such a system. As part of the project, we have improved the performance of an existing Question Answering Module \cite {patel2015question} in Yioop. The proposed work includes implementing a similar system for Hindi which is an Indian language. In this report, we describe the the different steps we followed to build the system. The report is organized as follows: Chapter 2 gives a background on Question Answer Systems and describes the different approaches used in developing such systems, Chapter 3, describes the individual modules which were implemented to build the Hindi Question Answer System, Chapter 4, describes tests and experiments conducted on the Hindi Question Answer System, Chapter 5 gives a short summary of the work done.
+

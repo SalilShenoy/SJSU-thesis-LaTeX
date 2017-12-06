@@ -1,10 +1,10 @@
 \chapter{Tests and Results}
 
 \paragraph{}
-The Question Answer System implemented is part of the Yioop search engine and is platform independent. The system works by tagging phrases using a Brill variant Part of Speech tagger for Hindi sentences. In the next step, triplets are formed and stored in the database using the grammar rules for Hindi. The test data for the system is an index created by configuring Yioop to crawl hindi webpages from Wikipedia and Indian websites with Hindi content. We created 3 crawls about 100,000 webpages from which the summarizer extracted text from 6000 documents to create the index. Below are examples, of some 'Wh' questions to the system.
+The Question Answer System implemented is part of the Yioop search engine and is platform independent. The system works by tagging phrases using a Brill variant Part of Speech tagger for Hindi sentences. In the next step, triplets are formed and stored in the database using the grammar rules for Hindi. The test data for the system is an index created by configuring Yioop to crawl hindi webpages from Wikipedia and Indian websites with Hindi content. We describe the experiments conducted on the Question Answer Module as a standalone utility and next we describe the results when integrated in Yioop.
 
-\section {Standalone Testcase}
-In this section, we provide a text case for the system as standalone module. It is assumed that the input to the system is a semantically and syntactically correct sentence.
+\section {Question Answer Module: Standalone Testcase}
+In this section, we describe test cases for the system as standalone module. It is assumed that the input to the system is a processed to remove special characters, punctuations, etc. Also, the given sentence is semantically and syntactically correct.
 
 \begin{enumerate}
 \item  Figure 9 shows the sentence after it is tagged for parts of speech
@@ -12,11 +12,11 @@ In this section, we provide a text case for the system as standalone module. It 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\textwidth]{images/sentence_testcase1.jpg}
-\caption{Standalone Sentence 1.} 
+\caption{Hindi Sentence 1.} 
 \label{fig:sentence_testcase1}
 \end{figure}
 
-A word for word translation of the above sentence to English is 'Obama Harward law school from 1999 graduate complete'. From the translation, we can guess which words should go into the noun, post and verb phrases. Figure 10 shows the Parse Tree generated for this sentence 
+A word for word translation of the above sentence to English is 'Obama Harward law school from 1999 graduate complete'. Figure 10 shows the Parse Tree generated for this sentence 
 
 \begin{figure}[htb]
 \centering
@@ -41,11 +41,11 @@ The triplets extracted for the above parse tree are as shown in Figure 11 above.
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.5\textwidth]{images/sentence_testcase2.jpg}
-\caption{Standalone Sentence 2.} 
+\caption{Hindi Sentence 2.} 
 \label{fig:sentence_testcase2}
 \end{figure}
 
-A word for word translation of the above sentence to English is 'Narendra Modi India (s) Prime Minister is'. From the translation, we can guess which words should go into the noun, post and verb phrases. Figure 13 shows the Parse Tree generated for this sentence 
+A word for word translation of the above sentence to English is 'Narendra Modi India (s) Prime Minister is'. Figure 13 shows the Parse Tree generated for this sentence 
 
 \begin{figure}[htb]
 \centering
@@ -63,24 +63,17 @@ Below are results for the Question Answer System when a crawl was setup for all 
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.8\textwidth]{images/who_question.jpg}
-\caption{Who question after Integration in Yioop.} 
-\label{fig:who_question}
+\includegraphics[width=0.9\textwidth]{images/QA_IntegratedInYioop.jpg}
+\caption{Question Answer Integration in Yioop.} 
+\label{fig:QA_IntegratedInYioop}
 \end{figure}
 \break
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.8\textwidth]{images/why_question.jpg}
-\caption{Why Question after Integration in Yioop.} 
-\label{fig:why_question}
-\end{figure}
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.8\textwidth]{images/what_question.jpg}
-\caption{What Question after Integration in Yioop.} 
-\label{fig:what_question}
+\includegraphics[width=0.8\textwidth]{images/Yioop_NoQA.jpg}
+\caption{No Question Answer System in Yioop.} 
+\label{fig:Yioop_NoQA}
 \end{figure}
 
 \paragraph{}
@@ -99,7 +92,7 @@ The initial implementation of the Question Answer system read performed part of 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\textwidth]{images/QA_performance2.jpg}
-\caption{Yioop performance for simple Hindi Questions.} 
+\caption{Part of Speech tagging time comparison.} 
 \label{fig:QA_performance2}
 \end{figure}
 \break
@@ -110,6 +103,6 @@ We compare the English and Hindi Question answer systems for relevant answers. I
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\textwidth]{images/QA_performance3.jpg}
-\caption{Yioop performance for simple Hindi Questions.} 
+\caption{English v/s Hindi Question Answer System.} 
 \label{fig:QA_performance3}
 \end{figure}
