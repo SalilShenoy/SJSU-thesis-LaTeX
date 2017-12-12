@@ -23,7 +23,7 @@ A question answer system can be implemented by following any of the three paradi
 
 \subsection{IR-based Question Answering System}
 \paragraph{}
-A simple Question Answer system should be capable of providing an answer which is short, concise and as close as possible to the correct answer. A Question Answer system which answers facts, generally returns short strings. These strings are mostly named entities viz. a person, an organization or a location. Such a system is known as a Factoid Question Answering System. A factoid question answering system searches for answers on the Web, or a document collection or short transcripts from which it can retrieve the possible answers \cite {chopra2016named}. These are then formatted and presented to the user. These systems generally involve three steps, Question Processing, Retrieving and Ranking Passages and Extracting the Answers. Figure 1 describes the architecture for an IR-Based question answer system.
+A simple Question Answer system should be capable of providing an answer which is short, concise and as close as possible to the correct answer. A Question Answer system which answers facts, generally returns short strings. These strings are mostly named entities viz. a person, an organization or a location. Such a system is known as a Factoid Question Answering System. A factoid question answering system searches for answers on the Web, or a document collection or short transcripts from which it can retrieve the possible answers \cite {chopra2016named}. These are then formatted and presented to the user. These systems generally involve three steps, Question Processing, Retrieving and Ranking Passages and Extracting the Answers. Figure~\ref{fig:IR_BasedQA} describes the architecture for an IR-Based question answer system.
 
 \begin{figure}[htb]
 \centering
@@ -63,7 +63,7 @@ With the ruled based approach one needs to know the language for which the syste
 \end{enumerate}
 
 \subsection{Hybrid Approach to Question Answering System}
-The previous approaches were limited to using text or knowledge for the Question Answer System. In the hybrid approach we combine the steps in these to implement the system. One example of such a system is IBM Watson \cite {high2012era}. Figure 2 describes the different phases involved in the implementing a hybrid question answer system.
+The previous approaches were limited to using text or knowledge for the Question Answer System. In the hybrid approach we combine the steps in these to implement the system. One example of such a system is IBM Watson \cite {high2012era}. Figure~\ref{fig:Hybrid_QA} describes the different phases involved in the implementing a hybrid question answer system. 
 
 \begin{enumerate}
 
@@ -85,3 +85,13 @@ Once we have the query phase from Step 1, we search external documents, texts an
 This involves merging the extracted answers which are similar. For example, the United States of America and U.S.A would be merged, this needs a dictionary with similar entities which can help detect this type of conflicts. At the end, we have a set of answers each with a feature vector. These are then subjected to a classifier and assigned a confidence value. This step runs iteratively helping output the best answer to the user.
 
  \end{enumerate}
+ 
+ \paragraph{}
+ Yioop is a Knowledge based question answer. The user asked questions are answered using the triplets stored as part of the Yioop index. Yioop extracts summaries from webpages which are then subjected to part of speech tagging and triplet extraction. These triplets are then stored in the database. When a user asks a question, the question undergoes part of speech tagging and a triplet is generated. These triplet is looked up in the Yioop database to retrieve the answer. Figure~\ref{fig:QA_Yioop}  describes the architecture of Question Answer system in Yioop. In case the triplet is not found, Yioop returns a list of links and references related to the question. I have implemented a Knowledge based Question Answer for Hindi, in which the user asks a question in hindi and Yioop returns a answer also in hindi.
+ 
+ \begin{figure}[htb]
+\centering
+\includegraphics[scale=0.4]{images/QA_Yioop.jpg}
+\caption{Question Answer System in Yioop.} 
+\label{fig:QA_Yioop}
+\end{figure}

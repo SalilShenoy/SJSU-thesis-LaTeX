@@ -213,7 +213,7 @@ The next step is extracting the object from the parse tree. We achieve this by p
 The predicate is extracted from the Verb phrase of the parse tree. These are terms tagged with VB, VBZ, VBG, VBP. As compared to a English sentence, the verb phrase has minimal information related to the text. It helps define the tense and relation between the information extracted from subject and object.
 
 \section{Named Entity Addition}
-The performance of the Question Answer system depends on the ability to extract information from the text. As we know most of the answers are facts (named entities) for such a system, the accuracy of the system is directly proportional to its ability to recognize them from the text. Most of the existing systems use a hand written dictionary of named entities to enhance the results. Following a similar approach, we add an option under the Page Options section in Yioop for the user to add entities to the Lexicon table. The user can do this by adding a single entity at a time as shown below in Figure 4.
+The performance of the Question Answer system depends on the ability to extract information from the text. As we know most of the answers are facts (named entities) for such a system, the accuracy of the system is directly proportional to its ability to recognize them from the text. Most of the existing systems use a hand written dictionary of named entities to enhance the results. Following a similar approach, we add an option under the Page Options section in Yioop for the user to add entities to the Lexicon table. The user can do this by adding a single entity at a time as shown below in Figure~\ref{fig:named_entity_manual} 
 
 \begin{figure}[htb]
 \centering
@@ -222,7 +222,7 @@ The performance of the Question Answer system depends on the ability to extract 
 \label{fig:named_entity_manual}
 \end{figure}
 
-Or they can upload a text file to Yioop which contains line separated entities and select the locale for the which the file contains the entities as shown in Figure 5.
+Or they can upload a text file to Yioop which contains line separated entities and select the locale for the which the file contains the entities as shown in Figure~\ref{fig:named_entity_file} 
 
 \begin{figure}[htb]
 \centering
@@ -231,7 +231,7 @@ Or they can upload a text file to Yioop which contains line separated entities a
 \label{fig:named_entity_file}
 \end{figure}
 
-For any given language user can view all the entities already added to the database, they can edit or delete entities of their choice. The UI for this functionality is as shown in Figure 6
+For any given language user can view all the entities already added to the database, they can edit or delete entities of their choice. The UI for this functionality is as shown in Figure~\ref{fig:viewallentities}
 
 \begin{figure}[htb]
 \centering
