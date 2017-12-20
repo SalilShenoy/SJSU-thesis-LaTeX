@@ -6,8 +6,8 @@ The Question Answer System implemented is part of the Yioop search engine and is
 \section {Question Answer Module: Standalone Testcase}
 In this section, we describe test cases for the system as standalone module. It is assumed that the input to the system is a processed to remove special characters, punctuations, etc. Also, the given sentence is semantically and syntactically correct.
 
-\begin{enumerate}
-\item  Figure~\ref{fig:sentence_testcase1} shows the sentence after it is tagged for parts of speech
+\paragraph{}
+Figure~\ref{fig:sentence_testcase1} shows the sentence after it is tagged for parts of speech
 
 \begin{figure}[htb]
 \centering
@@ -36,7 +36,8 @@ The triplets extracted for the above parse tree are as shown in Figure~\ref{fig:
 \end{figure}
 
 \break
-\item  Figure~\ref{fig:sentence_testcase2} shows the sentence after it is tagged for parts of speech
+\paragraph{}
+Figure~\ref{fig:sentence_testcase2} shows the sentence after it is tagged for parts of speech
 
 \begin{figure}[htb]
 \centering
@@ -54,12 +55,10 @@ A word for word translation of the above sentence to English is 'Narendra Modi I
 \label{fig:standalone_testcase2}
 \end{figure}
 
-\end{enumerate}
-
 \break
 \section{Question Answer Module Integrated in Yioop}
 \paragraph{}
-Below are results for the Question Answer System when a crawl was setup for all wikipedia pages in Hindi, Indian websites. We set up a crawl by configuring Yioop in under crawl options. For the crawl, we restrict the crawler to websites from domains 'hi.wikipedia.org', 'co.in' and 'in'. We stopped the crawl was after we hit 200,000 webpages. The crawler extracted information from 7925 webpages to create the index. Figure~\ref{fig:QA_IntegratedInYioop},  Figure~\ref{fig:Yioop_NoQA}, show the results after the Question Answer system is integrated in Yioop. 
+Below are results for the Question Answer System when a crawl was setup for all wikipedia pages in Hindi, Indian websites. We set up a crawl by configuring Yioop in under crawl options. For the crawl, we restrict the crawler to websites from domains 'hi.wikipedia.org', 'co.in' and 'in'. We stopped the crawl  after we hit 200,000 urls. The crawler extracted information from 7925 webpages to create the index. Figure~\ref{fig:QA_IntegratedInYioop},  Figure~\ref{fig:Yioop_NoQA}, show the results after the Question Answer system is integrated in Yioop. 
 
 \begin{figure}[htb]
 \centering
@@ -81,8 +80,8 @@ The integration of the Question Answer system slows down Yioop as extra processi
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.8\textwidth]{images/QA_performance1.jpg}
-\caption{Yioop performance for simple Hindi Questions.} 
+\includegraphics[width=0.8\textwidth]{images/Yioopwith_withoutQA_Hindi.jpg}
+\caption{Yioop performance before and after integration of Q/A System.} 
 \label{fig:QA_performance1}
 \end{figure}
 
@@ -91,14 +90,14 @@ The initial implementation of the Question Answer system read performed part of 
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.8\textwidth]{images/QA_performance2.jpg}
+\includegraphics[width=0.8\textwidth]{images/YioopPoS_performance.jpg}
 \caption{Part of Speech tagging time comparison.} 
 \label{fig:QA_performance2}
 \end{figure}
 \break
 
 \paragraph{}
-We compare the English and Hindi Question answer systems for relevant answers. I used 4 subjects on which I asked the same question in English and Hindi. Figure~\ref{fig:QA_performance3} shows the number of relevant answers returned on Page 1 of search result. We can see that English system is better at providing more accurate answers compared to Hindi. 
+We compare the English and Hindi Question answer systems for relevant answers. I used 4 topics on which I asked the same set of questions in English and Hindi. Figure~\ref{fig:QA_performance3} shows the number of correct answers retrieved on Page 1 of the search result. We can see that English system is better at providing more accurate answers compared to Hindi. 
 
 \begin{figure}[htb]
 \centering
@@ -107,10 +106,9 @@ We compare the English and Hindi Question answer systems for relevant answers. I
 \label{fig:QA_performance3}
 \end{figure}
 
+\break
 \paragraph{}
-We calculate the mean reciprocal rank for the same set of questions asked to the English and Hindi Question Answer systems.  
-
-Figure~\ref{fig:score_table} shows the reciprocal ranks for Hindi
+We calculate the mean reciprocal rank for the same set of questions asked to the English and Hindi Question Answer systems. Figure~\ref{fig:score_table} shows the reciprocal ranks for Hindi
 
 \begin{figure}[htb]
 \centering
@@ -119,6 +117,7 @@ Figure~\ref{fig:score_table} shows the reciprocal ranks for Hindi
 \label{fig:score_table}
 \end{figure}
 
+\paragraph{}
 We compare the English and Hindi Question Answer System on the  Average Precision scores. Average  Precision is basically the number of correct answers interpreted as correct from the total number of results returned. Figure~\ref{fig:AveragePrecisionScore} shows the score comparison between the 2 systems.
 
 \begin{figure}[htb]
@@ -128,4 +127,22 @@ We compare the English and Hindi Question Answer System on the  Average Precisio
 \label{fig:AveragePrecisionScore}
 \end{figure}
 
+\paragraph{}
 The Mean Average Precision (MAP), as the name says is the mean of all the average precision scores is the measure of accuracy of a information retrieval system. For our test with the Question Answer sytem integration in Yioop,  I observed the MAP to be 0.43 for Hindi Question Answer system and 0.61 for the English Question Answer System.
+
+\paragraph{}
+The systems are tested for accuracy comparing the answers retrieved against a known set of answers. I used a set of 25 questions with a corresponding set of answers which are known to be true. I then asked the same questions to the english and hindi question answering systems in Yioop. Figure~\ref{fig:Accuracy_EnglishQA} and Figure~\ref{fig:Accuracy_HindiQA} show the efficiency of the systems for simple questions.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{images/Accuracy_EnglishQA.jpg}
+\caption{Accuracy of English Q/A in Yioop.} 
+\label{fig:Accuracy_EnglishQA}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{images/Accuracy_HindiQA.jpg}
+\caption{Accuracy of Hindi Q/A in Yioop.} 
+\label{fig:Accuracy_HindiQA}
+\end{figure}

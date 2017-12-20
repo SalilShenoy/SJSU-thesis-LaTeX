@@ -11,11 +11,14 @@ The first challenge faced while developing such a system is how do we collect th
 \paragraph{}
 Below we explain in brief the architecture of a Question Answer System and discuss the different approaches which are used to extract information while implementing a Question Answer System. In general, any such system will always have the following modules,
 
-\begin{enumerate}
-\item The Information Retrieval module is responsible for extracting data from different sources, a collection of documents, text, transcripts or a relational database
-\item Data Processing, the system needs to retrieve the data and extract information from it, this involves multiple phases from extracting text data like summaries, then performing part of speech tagging, using some form of term chunking to recognize named entities like persons, organizations, or locations, and eventually generating some form of question answer pairs.
-\item Answer Processing, Some systems give the best answer they find on processing the data from what information is gathered others using some form of scoring and ranking to give out the best answer to the user.
-\end{enumerate}
+\paragraph{Information Retreival}
+The Information Retrieval module is responsible for extracting data from different sources, a collection of documents, text, transcripts or a relational database
+
+\paragraph{Data Processing}
+The system needs to retrieve the data and extract information from it, this involves multiple phases from extracting text data like summaries, then performing part of speech tagging, using some form of term chunking to recognize named entities like persons, organizations, or locations, and eventually generating some form of question answer pairs.
+
+\paragraph{Answer Processing}
+Some systems give the best answer they find on processing the data from what information is gathered others using some form of scoring and ranking to give out the best answer to the user.
 
 \section{Question Answer System Paradigms}
 We have had multiple Question Answer Systems developed till today \cite {katz1997annotating} \cite {zheng2002answerbus}.
@@ -32,42 +35,42 @@ A simple Question Answer system should be capable of providing an answer which i
 \label{fig:IR_BasedQA}
 \end{figure}
 
-\begin{enumerate}	
-\item Question Processing \\
+\paragraph{Question Processing}
 This phase decides what type of question is being asked and subsequently which type of answer to 
 extract. For question processing to work we need to perform the query formulation. Query formulation converts the posed question into a form which can be used in Information Retrieval. Once the form of the question is identified the exact answer type can be retrieved. 
 	
-\item Retrieving and Ranking Passage \\
+\paragraph{Retrieving and Ranking Passage}
 Once we get a query format from Step 1, we can use this to search the answer in the documents.
 In this step, we first rank the documents in which we find probable answers. For the documents which do not contain a match, we use the user written rules or machine learning algorithms to rank them.
 
-\break
-\item Extracting Answers \\
+\paragraph{Extracting Answers}
 The system extracts answers from passages using one of the two methods, either by using answer type or by using N-grams tiling.
-\end{enumerate}
 
 \subsection{Knowledge based Question Answer System}
-This paradigm relies on the mechanism to query a database. A semantic query is formed for the question which is asked. The query formed is used to retrieve the result from the database. The system ideally functions like a semantic parser as it maps a text string to a logical format. The database can be a relational database or the system may store triplets. The triplet has a predicate which defines the relation between the other 2 (two) parts. For example, DBPedia \cite{auer2007dbpedia}, Freebase \cite {bollacker2008freebase} are triplet stores derived from Wikipedia Infoboxes. One of the questions which can be posed to Knowledge based Question Answer system is to ask about one of the missing factors in the triplet. Knowledge Based System can be implemented using the following approaches,
+This paradigm relies on the mechanism to query a database. A semantic query is formed for the question which is asked. The query formed is used to retrieve the result from the database. The system ideally functions like a semantic parser as it maps a text string to a logical format. The database can be a relational database or the system may store triplets. The triplet has a predicate which defines the relation between the other 2 (two) parts. For example, DBPedia \cite{auer2007dbpedia}, Freebase \cite {bollacker2008freebase} are triplet stores derived from Wikipedia Infoboxes. One of the questions which can be posed to Knowledge based Question Answer system is to ask about one of the missing factors in the triplet. Figure~\ref{fig:KnowledgeBased_QA} describes the architecture of a Knowledge BAsed Question Answer system and we then different approaches followed when developing such a system.
 
-\begin{enumerate}
+\begin{figure}[htb]
+\centering
+\includegraphics[scale=0.8]{images/KnowledgeBased_QA.jpg}
+\caption{Knowledge Based Question Answer System.} 
+\label{fig:KnowledgeBased_QA}
+\end{figure}
 
-\item Rule Based Approach \\
+\break
+ 
+\paragraph{Rule Based Approach}
 This approach involves implementing hand written rules which will be used to extract the missing element from the triplet.
  
- \item Supervised Approach \\
+ \paragraph{Supervised Approach}
 In this approach, we have a training data consisting of mappings of questions to their logical forms. The model is trained using this data, so that going ahead it can identify which mapping to use in the future.
  
- \item Semi Supervised Approach \\
-With the ruled based approach one needs to know the language for which the system is being implemented which cannot be the case always. For the supervised approach the most challenging aspect is having quality and correct training data, which always never happens. To overcome the drawbacks of these approaches we have a Semi supervised approach. One system known as REVERB extracts information from triplet stores and other sources like Wikipedia to create new relations while parallelly undergoing training to map between questions and the logical forms.
-
-\end{enumerate}
+ \paragraph{Semi Supervised Approach}
+With the ruled based approach one needs to know the language for which the system is being implemented which cannot be the case always. For the supervised approach the most challenging aspect is having quality and correct training data, which always never happens. To overcome the drawbacks of these approaches we have a Semi supervised approach. One system known as REVERB extracts information from triplet stores and other sources like Wikipedia to create new relations while paralelly undergoing training to map between questions and the logical forms.
 
 \subsection{Hybrid Approach to Question Answering System}
 The previous approaches were limited to using text or knowledge for the Question Answer System. In the hybrid approach we combine the steps in these to implement the system. One example of such a system is IBM Watson \cite {high2012era}. Figure~\ref{fig:Hybrid_QA} describes the different phases involved in the implementing a hybrid question answer system. 
 
-\begin{enumerate}
-
-\item Question Processing \\
+\paragraph{Question Processing}
 In this phase, the system parses the question, tags it for named entities and extracts possible relations and as in the IR based approach it detects the answer type and question type.
 
 \begin{figure}[htb]
@@ -77,21 +80,20 @@ In this phase, the system parses the question, tags it for named entities and ex
 \label{fig:Hybrid_QA}
 \end{figure}
 
-\break
-\item Candidate Answer Generation \\
+\paragraph{Candidate Answer Generation}
 Once we have the query phase from Step 1, we search external documents, texts and transcripts as well as a structured database to extract as many as possible candidate answers. The manner in which we search the query phrase will differ, for the searching the external sources, the methods depend on the text we are searching. For the database, we can use queries similar to the ones we use with triplet stores like FreeBase, DBPedia, etc.
 
-\item Answer merging and scoring \\
+\paragraph{Answer merging and scoring}
 This involves merging the extracted answers which are similar. For example, the United States of America and U.S.A would be merged, this needs a dictionary with similar entities which can help detect this type of conflicts. At the end, we have a set of answers each with a feature vector. These are then subjected to a classifier and assigned a confidence value. This step runs iteratively helping output the best answer to the user.
 
- \end{enumerate}
- 
+ \break
+
  \paragraph{}
  Yioop is a Knowledge based question answer. The user asked questions are answered using the triplets stored as part of the Yioop index. Yioop extracts summaries from webpages which are then subjected to part of speech tagging and triplet extraction. These triplets are then stored in the database. When a user asks a question, the question undergoes part of speech tagging and a triplet is generated. These triplet is looked up in the Yioop database to retrieve the answer. Figure~\ref{fig:QA_Yioop}  describes the architecture of Question Answer system in Yioop. In case the triplet is not found, Yioop returns a list of links and references related to the question. I have implemented a Knowledge based Question Answer for Hindi, in which the user asks a question in hindi and Yioop returns a answer also in hindi.
  
  \begin{figure}[htb]
 \centering
-\includegraphics[scale=0.4]{images/QA_Yioop.jpg}
+\includegraphics{images/QA_Yioop.jpg}
 \caption{Question Answer System in Yioop.} 
 \label{fig:QA_Yioop}
 \end{figure}
