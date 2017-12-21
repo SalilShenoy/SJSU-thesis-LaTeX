@@ -23,6 +23,30 @@
 G.~G. Chowdhury, ``Natural language processing,'' \emph{Annual review of
   information science and technology}, vol.~37, no.~1, pp. 51--89, 2003.
 
+\bibitem{bobrow1964question}
+D.~G. Bobrow, ``A question-answering system for high school algebra word
+  problems,'' in \emph{Proceedings of the October 27-29, 1964, fall joint
+  computer conference, part I}.\hskip 1em plus 0.5em minus 0.4em\relax ACM,
+  1964, pp. 591--614.
+
+\bibitem{voorhees2000building}
+E.~M. Voorhees and D.~M. Tice, ``Building a question answering test
+  collection,'' in \emph{Proceedings of the 23rd annual international ACM SIGIR
+  conference on Research and development in information retrieval}.\hskip 1em
+  plus 0.5em minus 0.4em\relax ACM, 2000, pp. 200--207.
+
+\bibitem{dua2013hindi}
+M.~Dua, S.~Kumar, and Z.~S. Virk, ``Hindi language graphical user interface to
+  database management system,'' in \emph{Machine Learning and Applications
+  (ICMLA), 2013 12th International Conference on}, vol.~2.\hskip 1em plus 0.5em
+  minus 0.4em\relax IEEE, 2013, pp. 555--559.
+
+\bibitem{warren1981efficient}
+D.~H. Warren, ``Efficient processing of interactive relational data base
+  queries expressed in logic,'' in \emph{Proceedings of the seventh
+  international conference on Very Large Data Bases-Volume 7}.\hskip 1em plus
+  0.5em minus 0.4em\relax VLDB Endowment, 1981, pp. 272--281.
+
 \bibitem{katz1997annotating}
 B.~Katz, ``Annotating the world wide web using natural language,'' in
   \emph{Computer-Assisted Information Searching on Internet}.\hskip 1em plus

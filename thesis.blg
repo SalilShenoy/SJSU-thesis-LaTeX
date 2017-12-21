@@ -22,45 +22,45 @@ Database file #1: references.bib
 Warning--empty journal in patel2015question
 
 Done.
-You've used 20 entries,
+You've used 24 entries,
             3985 wiz_defined-function locations,
-            923 strings with 11282 characters,
-and the built_in function-call counts, 15066 in all, are:
-= -- 1157
-> -- 350
-< -- 121
-+ -- 192
-- -- 59
-* -- 705
-:= -- 2213
-add.period$ -- 50
-call.type$ -- 20
-change.case$ -- 21
-chr.to.int$ -- 300
-cite$ -- 21
-duplicate$ -- 1097
-empty$ -- 1329
-format.name$ -- 73
-if$ -- 3499
+            948 strings with 12155 characters,
+and the built_in function-call counts, 18572 in all, are:
+= -- 1430
+> -- 412
+< -- 158
++ -- 230
+- -- 66
+* -- 864
+:= -- 2699
+add.period$ -- 62
+call.type$ -- 24
+change.case$ -- 25
+chr.to.int$ -- 396
+cite$ -- 25
+duplicate$ -- 1340
+empty$ -- 1652
+format.name$ -- 82
+if$ -- 4335
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 186
-newline$ -- 83
-num.names$ -- 20
-pop$ -- 468
+int.to.str$ -- 24
+missing$ -- 222
+newline$ -- 95
+num.names$ -- 24
+pop$ -- 554
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1166
+skip$ -- 1442
 stack$ -- 0
-substring$ -- 732
-swap$ -- 852
-text.length$ -- 21
+substring$ -- 960
+swap$ -- 1053
+text.length$ -- 26
 text.prefix$ -- 0
 top$ -- 8
 type$ -- 0
 warning$ -- 1
-while$ -- 74
-width$ -- 22
-write$ -- 203
+while$ -- 94
+width$ -- 26
+write$ -- 240
 (There was 1 warning)
