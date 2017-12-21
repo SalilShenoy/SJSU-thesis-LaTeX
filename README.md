@@ -13,3 +13,5 @@ As part of my thesis, I switched to BibTex.  The requirements needed to use BibT
 The example steps for BibTex were debugged on a Mac. Given the "*.bat" files, the approach above probably will not work out of the box on a Mac.  Here is a link with more general information on using BibTex.
 
 I am also including a Texmaker session so you can load it into Texmaker directly.  You need to modify the session file to match the local path on your machine.  If you can get TexStudio working instead, it is a better tool in my humble opinion.
+
+To generate bibliography: run bash build/genbib.bat from root folder.

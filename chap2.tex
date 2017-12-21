@@ -1,7 +1,7 @@
 \chapter{Background on Question Answer Systems}
 
 \paragraph{}
-Even with the simplifications developed for searching information online it can be tough and time consuming to navigate through the vast amount of data. One of the solutions, to this problem is developing an automated system which is capable enough to accept input in natural language and generate an output which is equally natural. This is where a Question Answer System plays an important role. The aim of a Question Answer System is basically to allow a user to ask a question in everyday language and receive an answer in user comprehensible format. 
+Even with the simplifications developed for searching information online it can be tough and time consuming to navigate through the vast amount of data. One of the solutions to this problem is developing an automated system which is capable enough to accept input in natural language and generate an output which is equally natural. This is where a Question Answer System plays an important role. The aim of a Question Answer System is basically to allow a user to ask a question in everyday language and receive an answer in user comprehensible format. 
 
 \paragraph{}
 As with developing software systems, building an efficient and robust Question Answering System has its own fair share of challenges. There are multiple ways in which we can build this system from  machine language translation \cite {bao2014knowledge}, neural networks \cite{iyyer2014neural} and different machine learning algorithms \cite{zhang2003question}.
@@ -89,7 +89,7 @@ This involves merging the extracted answers which are similar. For example, the 
  \break
 
  \paragraph{}
- Yioop is a Knowledge based question answer. The user asked questions are answered using the triplets stored as part of the Yioop index. Yioop extracts summaries from webpages which are then subjected to part of speech tagging and triplet extraction. These triplets are then stored in the database. When a user asks a question, the question undergoes part of speech tagging and a triplet is generated. These triplet is looked up in the Yioop database to retrieve the answer. Figure~\ref{fig:QA_Yioop}  describes the architecture of Question Answer system in Yioop. In case the triplet is not found, Yioop returns a list of links and references related to the question. I have implemented a Knowledge based Question Answer for Hindi, in which the user asks a question in hindi and Yioop returns a answer also in hindi.
+ Yioop is a Knowledge based question answer. The user asked questions are answered using the triplets stored as part of the Yioop index. Yioop extracts summaries from webpages which are then subjected to part of speech tagging and triplet extraction. These triplets are then stored in the database. When a user asks a question, the question undergoes part of speech tagging and a triplet is generated. These triplet is looked up in the Yioop database to retrieve the answer. Figure~\ref{fig:QA_Yioop}  describes the architecture of Question Answer system in Yioop. In case the triplet is not found, Yioop returns a list of links and references related to the question. I have implemented a Knowledge based Question Answer for Hindi, in which the user asks a question in Hindi and Yioop returns a answer also in Hindi.
  
  \begin{figure}[htb]
 \centering

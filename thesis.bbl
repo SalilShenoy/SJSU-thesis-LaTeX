@@ -29,7 +29,7 @@ B.~Katz, ``Annotating the world wide web using natural language,'' in
   0.5em minus 0.4em\relax LE CENTRE DE HAUTES ETUDES INTERNATIONALES
   D'INFORMATIQUE DOCUMENTAIRE, 1997, pp. 136--155.
 
-\bibitem{nanda2016hindi}
+\bibitem{nanda2016Hindi}
 G.~Nanda, M.~Dua, and K.~Singla, ``A hindi question answering system using
   machine learning approach,'' in \emph{Computational Techniques in Information
   and Communication Technologies (ICCTICT), 2016 International Conference
@@ -101,16 +101,16 @@ K.~Bollacker, C.~Evans, P.~Paritosh, T.~Sturge, and J.~Taylor, ``Freebase: a
 R.~High, ``The era of cognitive systems: An inside look at ibm watson and how
   it works,'' \emph{IBM Corporation, Redbooks}, 2012.
 
+\bibitem{brill1992simple}
+E.~Brill, ``A simple rule-based part of speech tagger,'' in \emph{Proceedings
+  of the workshop on Speech and Natural Language}.\hskip 1em plus 0.5em minus
+  0.4em\relax Association for Computational Linguistics, 1992, pp. 112--116.
+
 \bibitem{brill1999unsupervised}
 E.~Brill and M.~Pop, ``Unsupervised learning of disambiguation rules for
   part-of-speech tagging,'' in \emph{Natural language processing using very
   large corpora}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 1999, pp.
   27--42.
-
-\bibitem{brill1992simple}
-E.~Brill, ``A simple rule-based part of speech tagger,'' in \emph{Proceedings
-  of the workshop on Speech and Natural Language}.\hskip 1em plus 0.5em minus
-  0.4em\relax Association for Computational Linguistics, 1992, pp. 112--116.
 
 \bibitem{garg2012rule}
 N.~Garg, V.~Goyal, and S.~Preet, ``Rule based hindi part of speech tagger.'' in
